@@ -2,16 +2,47 @@
       <head>
       <title>The Hunger Games Simulator</title>
     <link rel="icon" type="image/png" href="/FunWorld/favicons/hungerGamesSimulatorFavicon.png">
+            <style>
+div.a {
+margin-top: 1%;
+  margin-right: 20%;
+  margin-left: 20%;
+  background-color: transparent;
+}
+div.b {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-right: 20%;
+        text-align: right;
+}
+</style>
   </head>
   <header style="background-color:black">
     <h1><FONT COLOR ="white"><a href=/FunWorld/index.html>Menu Page</a></h1>
     <body style="background-color:black">
       <h1 style="text-align:center;">The Hunger Games Simulator</h1>
-      <embed src="https://simublast.com/hunger-games-simulator/" style="width:100%; height: 100%;">
-      <p style="margin:20%">The Hunger Games universe is a dystopia set in Panem, a North American country consisting of the wealthy Capitol and 
+          <div class="b">      
+            <button onclick="openFullscreen();">Fullscreen</button>
+      </div>
+      <embed controls id="hGS" src="https://simublast.com/hunger-games-simulator/" style="width:100%; height: 100%;">
+          <div class = "a">
+      The Hunger Games universe is a dystopia set in Panem, a North American country consisting of the wealthy Capitol and 
         13 districts in varying states of poverty. Every year, children from the first 12 districts are selected via lottery to participate in a 
         compulsory televised battle royale death match called The Hunger Games.
-      </p>
+                </div>
+
+           <script>
+var elem = document.getElementById("hGS");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
     </body>
   </header>
 </html>
