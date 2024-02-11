@@ -2,16 +2,46 @@
   <head>
      <title>Krunker.io</title>
     <link rel="shortcut icon" type="image/png" href="/FunWorld/favicons/krunkerFavicon.png">
+    style>
+div.a {
+margin-top: 1%;
+  margin-right: 20%;
+  margin-left: 20%;
+  background-color: transparent;
+}
+div.b {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-right: 20%;
+        text-align: right;
+}
+</style>
   </head>
   <title>Krunker.io</title>
   <header style="background-color:black">
     <h1><FONT COLOR ="white"><a href=/FunWorld/index.html>Menu Page</a></h1>
     <body style="background-color:black">
       <h1 style="text-align:center;">Krunker.io</h1>
+      <div class="b">      
+            <button onclick="openFullscreen();">Fullscreen</button>
+      </div>
       <embed src="https://krunker.io/" style="width:100%; height: 100%;">
-      <p style="margin:20%"> Krunker.io is a popular 3D browser FPS. The game entered open beta on May 20th, 2018, and was fully released on 
+      <div class="a"> Krunker.io is a popular 3D browser FPS. The game entered open beta on May 20th, 2018, and was fully released on 
         January 29th, 2019.
-      </p>
+
+         <script>
+var elem = document.getElementById("sorcererGame");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+      </div>
     </body>
   </header>
 </html>
