@@ -2,14 +2,46 @@
           <head>
      <title>Ninja Wall Runner</title>
     <link rel="shortcut icon" type="image/png" href="/FunWorld/favicons/wallRunnerFavicon.png">
+                    <style>
+div.a {
+margin-top: 1%;
+  margin-right: 20%;
+  margin-left: 20%;
+  background-color: transparent;
+}
+div.b {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-right: 20%;
+        text-align: right;
+}
+</style>
   </head>
   <header style="background-color:black">
     <h1><FONT COLOR ="white"><a href=/FunWorld/index.html>Menu Page</a></h1>
     <body style="background-color:black">
       <h1 style="text-align:center;">Ninja Wall Runner</h1>
-      <embed src="https://www.calculators.org/games/ninja-wall-runner/game.php" style="width:100%; height: 100%;">
-      <p style="margin:20%">Ninja Wall Runner - Vertical scrolling running game where a ninja jumps back and forth across sides of the screen 
-        to keep running up while avoiding spikes.</p>
-    </body>
+               <div class="b">      
+            <button onclick="openFullscreen();">Fullscreen</button>
+      </div>
+      <embed controls id="wallRunner" src="https://www.calculators.org/games/ninja-wall-runner/game.php" style="width:100%; height: 100%;">
+
+<div class="a">
+          <p>Ninja Wall Runner - Vertical scrolling running game where a ninja jumps back and forth across sides of the screen 
+          to keep running up while avoiding spikes.</p>
+              </div>
+
+              <script>
+var elem = document.getElementById("wallRunner");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
   </header>
 </html>
