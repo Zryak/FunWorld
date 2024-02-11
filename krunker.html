@@ -25,12 +25,12 @@ div.b {
       <div class="b">      
             <button onclick="openFullscreen();">Fullscreen</button>
       </div>
-      <embed src="https://krunker.io/" style="width:100%; height: 100%;">
+      <embed controls id="krunker" src="https://krunker.io/" style="width:100%; height: 100%;">
       <div class="a"> Krunker.io is a popular 3D browser FPS. The game entered open beta on May 20th, 2018, and was fully released on 
         January 29th, 2019.
 
          <script>
-var elem = document.getElementById("sorcererGame");
+var elem = document.getElementById("krunker");
 function openFullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
