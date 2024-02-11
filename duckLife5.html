@@ -1,0 +1,49 @@
+<html>
+    <head>
+     <title>Duck Life 5</title>
+    <link rel="shortcut icon" type="image/png" href="/FunWorld/favicons/duckLife5Favicon.png">
+         <style>
+div.a {
+margin-top: 1%;
+  margin-right: 20%;
+  margin-left: 20%;
+  background-color: transparent;
+}
+div.b {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-right: 20%;
+        text-align: right;
+}
+</style>
+  </head>
+  <header style="background-color:black">
+    <h1><FONT COLOR ="white"><a href=/FunWorld/index.html>Menu Page</a></h1>
+    <body style="background-color:black">
+      <h1 style="text-align:center;">Duck Life 5</h1>
+         <div class="b">      
+            <button onclick="openFullscreen();">Fullscreen</button>
+      </div>
+      <p align="center"><iframe controls id="dL5" src="https://archive.org/embed/treasure_hunt_202311" width=560 height=384 frameborder="0" 
+        webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></p>
+      <div class="a">
+After the Fire Duck was defeated, the erupted volcano revealed an ancient cave, and treasure is inside! Are you ready to 
+        take the challenge and explore the cave? Are you swift enough to survive in this fast paced action adventure! In 
+        fact, this is the most epic adventure in the Duck Life world yet!
+      </div>
+
+        <script>
+var elem = document.getElementById("dL5");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+    </body>
+  </header>
+</html>
