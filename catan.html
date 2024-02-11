@@ -2,19 +2,48 @@
   <head>
       <title>Catan</title>
     <link rel="icon" type="image/png" href="/FunWorld/favicons/catanFavicon.png">
+    <style>
+div.a {
+margin-top: 1%;
+  margin-right: 20%;
+  margin-left: 20%;
+  background-color: transparent;
+}
+div.b {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-right: 20%;
+        text-align: right;
+}
+</style>
   </head>
   <header style="background-color:black">
     <h1><FONT COLOR ="white"><a href=/FunWorld/index.html>Menu Page</a></h1>
     <body style="background-color:black">
       <h1 style="text-align:center;">Catan</h1>
-      <embed src="https://colonist.io/" style="width:100%; height: 100%;">
-      <p style="margin:20%"> The players in the game represent settlers establishing settlements on the fictional island of Catan. Players build 
+       <div class="b">      
+            <button onclick="openFullscreen();">Fullscreen</button>
+      </div>
+      <embed controls id="catan" src="https://colonist.io/" style="width:100%; height: 100%;">
+      <div class="a"> The players in the game represent settlers establishing settlements on the fictional island of Catan. Players build 
         settlements, cities, and roads to connect them as they settle the island. The game board, which represents the island, is composed of 
         hexagonal tiles (hexes) of different land types, which are laid out randomly at the beginning of each game. Newer editions of the game 
         began to depict a fixed layout in their manual, which has been proved by computer simulations to be fairly even-handed, and recommend this 
         to be used by beginners. In 2016, editions of the game were released with a conventional fixed layout board in this configuration, the 
         hexes of which cannot be rearranged.
-      </p>
+      </div>
+        <script>
+var elem = document.getElementById("catan");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
     </body>
   </header>
 </html>
