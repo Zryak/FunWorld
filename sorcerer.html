@@ -3,6 +3,10 @@
      <title>The Sorcerer Game</title>
     <link rel="shortcut icon" type="image/png" href="/FunWorld/favicons/sorcererFavicon.png">
                 <style>
+head {background-color:black;
+     color: white;}
+body {background-color:black;
+     color: white;}
 div.a {
 margin-top: 1%;
   margin-right: 20%;
@@ -15,15 +19,45 @@ div.b {
         margin-right: 20%;
         text-align: right;
 }
+div.c {
+          margin-left: 10%;
+          text-align: left;
+}
+                              
+table {
+          table-layout: fixed;
+          margin-left: 10%;
+          margin-right: 10%;
+}
+td, th {
+  text-align: center;
+}
 </style>
   </head>
-  <header style="background-color:black">
+  <header>
+
+<table style="width:80%">
+                      
+  <tr>
+            
+    <th style="text-align:left">
     <h1><FONT COLOR ="white"><a href=/FunWorld/index.html>Menu Page</a></h1>
-    <body style="background-color:black">
-      <h1 style="text-align:center;">The Sorcerer Game</h1>
-             <div class="b">      
-            <button onclick="openFullscreen();">Fullscreen</button>
-      </div>
+</th>
+            
+    <th>  
+              <h1 style="text-align:center">The Sorcerer Game</h1>
+    </th>
+            
+    <th style="text-align:right">    
+           
+</th>
+  </tr>
+</table>
+
+<div class="c"
+ <button onclick="openFullscreen();">Fullscreen
+</button>            
+
       <embed controls id="sorcererGame" src="https://www.calculators.org/games/the-sorcerer/game.php" style="width:100%; height: 100%;">
       <div class="a">The Sorcerer - Ball chain game which was inspired by Zuma. Players must connect at least 3 balls in a row in order 
         to remove them from the playing field. If you die you can restart on the level you started at and this version of the game has the 
