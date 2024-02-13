@@ -1,0 +1,76 @@
+<html>
+        <head>
+     <title>Tap Tap Shots</title>
+    <link rel="shortcut icon" type="image/png" href="/FunWorld/favicons/tapTapShotsFavicon.png">
+                <style>
+head {background-color:black;
+     color: white;}
+body {background-color:black;
+     color: white;}
+div.a {
+margin-top: 1%;
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: transparent;
+}
+div.c {
+          margin-left: 10%;
+          text-align: left;
+}
+                              
+table {
+          table-layout: fixed;
+          margin-left: 10%;
+          margin-right: 10%;
+}
+td, th {
+  text-align: center;
+}
+</style>
+  </head>
+  <header>
+
+<table style="width:80%">
+                      
+  <tr>
+            
+    <th style="text-align:left">
+    <h1><FONT COLOR ="white"><a href=/FunWorld/index.html>Menu Page</a></h1>
+</th>
+            
+    <th>  
+              <h1 style="text-align:center">Tap Tap Shots</h1>
+    </th>
+            
+    <th style="text-align:right">    
+           
+</th>
+  </tr>
+</table>
+
+      <div class="c">      
+            <button onclick="openFullscreen();">Fullscreen</button>
+      </div>
+
+          <p align="center">
+      <embed controls id="tapTapShots" src="https://html5.gamedistribution.com/9c634fb94d3242369532cad391896fe0/?gd_sdk_referrer_url=https://taptapshot.com/" style="width:80%; height: 80%;">
+              </p>
+
+      <div class="a">Get on fire in this hot, epic and bouncy basketball game! Try to sink your balls into the net as 
+        quickly as possible, once the timer expires it is game over. Score as many point as you can before the time runs
+        out!</div>
+          
+            <script>
+var elem = document.getElementById("tapTapShots");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+  </header>
+</html>
