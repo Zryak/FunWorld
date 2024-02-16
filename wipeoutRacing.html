@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Wipeout Racing Game</title>
+     <link rel="icon" type="image/png" href="/FunWorld/favicons/wipeoutRacingFavicon.png">
+    <style>
+head {background-color:black;
+     color: white;}
+body {background-color:black;
+     color: white;}
+div.a {
+margin-top: 1%;
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: black;
+}
+div.c {
+          margin-left: 10%;
+          text-align: left;
+}
+                              
+table {
+          table-layout: fixed;
+          margin-left: 10%;
+          margin-right: 10%;
+}
+td, th {
+  text-align: center;
+}
+</style>
+  </head>  
+  <header>
+
+<table style="width:80%">
+                      
+  <tr>
+            
+    <th style="text-align:left">
+    <h1><FONT COLOR ="white"><a href=/FunWorld/index.html>Menu Page</a></h1>
+</th>
+            
+    <th>  
+              <h1 style="text-align:center">Wipeout Racing Game</h1>
+    </th>
+            
+    <th style="text-align:right">    
+           
+</th>
+  </tr>
+</table>
+    
+    <body>
+
+        <div class="c">      
+            <button onclick="openFullscreen();">Fullscreen</button>
+      </div>
+
+      <p align="center">
+      <embed controls id="wipeoutRacing" src="https://phoboslab.org/wipegame/" style="width:80%; height: 80%;">
+      </p>
+      
+      <div class="a">
+        Wipeout is a racing game that can be played in first person or in thrid person. Speed through boosts and shoot other racers to get first place.
+      </div>
+      
+       <script>
+var elem = document.getElementById("wipeoutRacing");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+    </body>
+  </header>
+</html>
