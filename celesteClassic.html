@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>Celeste Classic</title>
+     <link rel="icon" type="image/png" href="/FunWorld/favicons/celesteClassicFavicon.png">
+    <style>
+head {background-color:black;
+     color: white;}
+body {background-color:black;
+     color: white;}
+div.a {
+margin-top: 1%;
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: black;
+}
+div.c {
+          margin-left: 10%;
+          text-align: left;
+}
+                              
+table {
+          table-layout: fixed;
+          margin-left: 10%;
+          margin-right: 10%;
+}
+td, th {
+  text-align: center;
+}
+</style>
+  </head>  
+  <header>
+
+<table style="width:80%">
+                      
+  <tr>
+            
+    <th style="text-align:left">
+    <h1><FONT COLOR ="white"><a href=/FunWorld/index.html>Menu Page</a></h1>
+</th>
+            
+    <th>  
+              <h1 style="text-align:center">Celeste Classic</h1>
+    </th>
+            
+    <th style="text-align:right">    
+           
+</th>
+  </tr>
+</table>
+    
+    <body>
+
+        <div class="c">      
+            <button onclick="openFullscreen();">Fullscreen</button>
+      </div>
+
+      <p align="center">
+      <embed controls id="celesteClassic" src="https://celesteclassic.github.io/" style="width:80%; height: 80%;">
+      </p>
+      
+      <div class="a">Development of Celeste began in August 2015, when game developers Maddy Thorson and Noel Berry participated in a game jam, 
+        where they created Celeste for the PICO-8. Thorson, who served as producer, and Berry, who served as the lead programmer, wanted to expand the 
+        PICO-8 game into a full release. Inspired in part by Thorson's own TowerFall (2013) and by Super Mario Bros. 3 (1988), the gameplay was designed 
+        to be minimal, while mirroring Thorson's experiences with bouldering. Celeste was designed to be accessible, featuring game mechanics intended 
+        to make the game more forgiving in addition to an "Assist Mode" offering several options to make the game less challenging. The themes of 
+        self-forgiveness present in the narrative began with the idea of creating a "more introspective" game, and later grew to become intertwined 
+        with the gameplay. The soundtrack was composed by Lena Raine.</div>
+
+       <script>
+var elem = document.getElementById("celesteClassic");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+    </body>
+  </header>
+</html>
