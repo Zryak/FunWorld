@@ -26,7 +26,25 @@ table {
 td, th {
   text-align: center;
 }
+.container {
+position: relative;
+align: center;
+overflow: hidden;
+width: 100%;
+padding-top: 75%;
 
+}
+.embed {
+align: center;
+position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  border: none;
+}
 </style>
   </head>
   <header>
@@ -55,10 +73,27 @@ td, th {
             <button onclick="openFullscreen();">Fullscreen</button>
       </div>
       
-<p align="center"><iframe controls id="dL1" src="https://archive.org/embed/ducklife_flash" width="600" height="400" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></p>
+<div class="container">
+       <object>
+        <embed class="embed" src="https://zryak.github.io/FunWorld/flashgames/duckLife1.swf"> 
+    </object>
+    </div>
       
       <div class="a">Duck Life 1 is a game about training your duck to beat all others and become the world champion!</div>
 
+
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("container");
+        container.appendChild(player);
+        player.load("duckLife1.swf");
+    });
+</script>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+      
        <script>
 var elem = document.getElementById("dL1");
 function openFullscreen() {
