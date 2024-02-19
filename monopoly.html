@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title>Monopoly</title>
+     <link rel="icon" type="image/png" href="/FunWorld/favicons/monopolyFavicon.png">
+    <style>
+head {background-color:black;
+     color: white;}
+body {background-color:black;
+     color: white;}
+div.a {
+margin-top: 1%;
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: black;
+}
+div.c {
+          margin-left: 10%;
+          text-align: left;
+}
+                              
+table {
+          table-layout: fixed;
+          margin-left: 10%;
+          margin-right: 10%;
+}
+td, th {
+  text-align: center;
+}
+</style>
+  </head>  
+  <header>
+
+<table style="width:80%">
+                      
+  <tr>
+            
+    <th style="text-align:left">
+    <h1><FONT COLOR ="white"><a href=/FunWorld/index.html>Menu Page</a></h1>
+</th>
+            
+    <th>  
+              <h1 style="text-align:center">Monopoly</h1>
+    </th>
+            
+    <th style="text-align:right">    
+           
+</th>
+  </tr>
+</table>
+    
+    <body>
+
+        <div class="c">      
+            <button onclick="openFullscreen();">Fullscreen</button>
+      </div>
+
+      <p align="center">
+      <embed controls id="monopoly" src="https://richup.io/" style="width:80%; height: 80%;">
+      </p>
+      
+      <div class="a">Monopoly is a multiplayer economics-themed board game. In the game, players roll two dice to move 
+        around the game board, buying and trading properties and developing them with houses and hotels. Players collect 
+        rent from their opponents and aim to drive them into bankruptcy. Money can also be gained or lost through Chance 
+        and Community Chest cards and tax squares. Players receive a salary every time they pass "Go" and can end up in 
+        jail, from which they cannot move until they have met one of three conditions. House rules, hundreds of different 
+        editions, many spin-offs, and related media exist. Monopoly has become a part of international popular culture, 
+        having been licensed locally in more than 103 countries and printed in more than 37 languages. As of 2015, it was 
+        estimated that the game had sold 275 million copies worldwide. The original game was based on locations in 
+        Atlantic City, New Jersey, United States with the exception of Marvin Gardens which is in Ventnor, NJ.</div>
+      
+       <script>
+var elem = document.getElementById("monopoly");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+    </body>
+  </header>
+</html>
