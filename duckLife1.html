@@ -71,12 +71,12 @@ position: absolute;
     <body>
 
       <div class="c">      
-            <button onclick="openFullscreen();">Fullscreen</button>
+            To open fullscreen right click on the game and select "Enter Fullscreen"
       </div>
       
 <div class="container">
        <object>
-        <embed controls id="dL1" class="embed" src="https://zryak.github.io/FunWorld/flashgames/duckLife1.swf"> 
+        <embed class="embed" src="https://zryak.github.io/FunWorld/flashgames/duckLife1.swf"> 
     </object>
     </div>
       
@@ -94,19 +94,7 @@ position: absolute;
     });
 </script>
 <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-      
-       <script>
-var elem = document.getElementById("dL1");
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE11 */
-    elem.msRequestFullscreen();
-  }
-}
-</script>
+
     </body>
   </header>
 </html>
