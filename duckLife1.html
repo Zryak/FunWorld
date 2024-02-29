@@ -65,14 +65,14 @@ td, th {
             <button onclick="openFullscreen();">Fullscreen</button>
       </div>
       
-       <p class="embedcontainer">
+       <p class="embedcontainer" controls id="dL1">
     <embed class="embed" src="https://zryak.github.io/FunWorld/flashgames/duckLife1.swf"> 
     </p>
       
       <div class="a">Duck Life 1 is a game about training your duck to beat all others and become the world champion!</div>
 
       <script>
-var elem = document.getElementById("dL2");
+var elem = document.getElementById("dL1");
 function openFullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
@@ -84,16 +84,6 @@ function openFullscreen() {
 }
 </script>
 
-<script>
-    window.RufflePlayer = window.RufflePlayer || {};
-    window.addEventListener("load", (event) => {
-        const ruffle = window.RufflePlayer.newest();
-        const player = ruffle.createPlayer();
-        const container = document.getElementById("container");
-        container.appendChild(player);
-        player.load("duckLife1.swf");
-    });
-</script>
 <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 
     </body>
