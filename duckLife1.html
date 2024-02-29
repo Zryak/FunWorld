@@ -36,6 +36,7 @@ td, th {
     max-width: 80%;
     aspect-ratio: 4/3;
     margin: auto;
+    margin-top: 1%;
 </style>
   </head>
   <header>
@@ -60,16 +61,28 @@ td, th {
     
     <body>
 
-      <div class="c">      
-            To open fullscreen right click on the game and select "Enter Fullscreen"
+       <div class="c">      
+            <button onclick="openFullscreen();">Fullscreen</button>
       </div>
-
+      
        <p class="embedcontainer">
     <embed class="embed" src="https://zryak.github.io/FunWorld/flashgames/duckLife1.swf"> 
     </p>
       
       <div class="a">Duck Life 1 is a game about training your duck to beat all others and become the world champion!</div>
 
+      <script>
+var elem = document.getElementById("dL2");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
 
 <script>
     window.RufflePlayer = window.RufflePlayer || {};
