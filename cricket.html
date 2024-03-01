@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>Doodle Cricket</title>
+        <link rel="icon" type="image/png" href="/FunWorld/favicons/cricketFavicon.png">
+    <style>
+head {background-color:black;
+     color: white;}
+body {background-color:black;
+     color: white;}
+div.a {
+margin-top: 1%;
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: black;
+}
+div.c {
+          margin-left: 10%;
+          text-align: left;
+}
+                              
+table {
+          table-layout: fixed;
+          margin-left: 10%;
+          margin-right: 10%;
+}
+td, th {
+  text-align: center;
+}
+</style>
+  </head>
+  <header>
+
+<table style="width:80%">
+                      
+  <tr>
+            
+    <th style="text-align:left">
+    <h1><FONT COLOR ="white"><a href=/FunWorld/index.html>Menu Page</a></h1>
+</th>
+            
+    <th>  
+              <h1 style="text-align:center">Doodle Cricket</h1>
+    </th>
+            
+    <th style="text-align:right">    
+           
+</th>
+  </tr>
+</table>
+    
+    <body>
+
+        <div class="c">      
+            <button onclick="openFullscreen();">Fullscreen</button>
+      </div>
+
+      <p align="center">
+      <embed controls id="cricket" src="https://doodlecricket.github.io/#/" style="width:80%; height: 80%;">
+      </p>
+        
+      <div class="a"> Ah, summer: the sound of leather on willow, and the spectacle of cricket ... cricket! As the 
+        tournament begins in the Oval cricket ground, something buzzes outside. A team of crickets sans tickets have 
+        set up their own wickets for a game of pest cricket! As they face their archrivals, the snails, it’s sure to be 
+        a match for the centuries. Don’t be fooled by their sluggish looks — these fielders can be fast on their feet!
+
+To celebrate the 2017 ICC Champions Trophy, we’re inviting everyone to tap/click and take a swing at our pocket-size game!
+
+We know that cricket is loved worldwide, so we wanted to make sure our Doodle works for everyone, including those on slower 
+        mobile networks. We kept the file size fly-sized, and the result is our smallest interactive Doodle ever — even 
+        snail networks can load it in seconds.
+
+Whether you're enjoying the tournament at a snail’s pace or bowling faster than the beat of a hummingbird's wings, 
+        here's hoping you hit it out of the park this summer!
+      </div>
+
+      <script>
+var elem = document.getElementById("cricket");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+    </body>
+  </header>
+</html>
