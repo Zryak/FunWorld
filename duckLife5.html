@@ -27,9 +27,16 @@ td, th {
   text-align: center;
 }
       .embed {
-    width: 80%;
-    height: 80%;
-    align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .embedcontainer {
+    width: auto;
+    max-height: 100%;
+    max-width: 80%;
+    aspect-ratio: 4/3;
+    margin: auto;
+  margin-top: 1%;
   }
 </style>
   </head>
@@ -58,9 +65,9 @@ td, th {
             <button onclick="openFullscreen();">Fullscreen</button>
       </div>
 
-
-    <embed controls id="dL5" class="embed" src="https://zryak.github.io/FunWorld/flashgames/ducklifetreasurehunt.swf"> 
-
+    <p class="embedcontainer" controls id="dL5">
+    <embed class="embed" src="https://zryak.github.io/FunWorld/flashgames/ducklifetreasurehunt.swf"> 
+    </p>
         
       <div class="a">
 After the Fire Duck was defeated, the erupted volcano revealed an ancient cave, and treasure is inside! Are you ready to 
