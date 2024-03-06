@@ -1,0 +1,57 @@
+<html>
+  <head>
+     <title>One Punch Man</title>
+ <link rel="icon" type="image/png" href="/FunWorld/favicons/onePunchManFavicon.png">
+    <style>
+      div.a {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+            div.b {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 1%;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <header>
+  
+      <style>
+        body {
+          background-image: url("/FunWorld/images/onePunchManBackground.png");
+          background-size: cover;
+          background-repeat: repeat;
+        }
+      </style>
+
+    <div class="a">
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category" style="text-align: right;">
+    <FONT COLOR ="white"><ul id="myMenu">
+      <li style="font-size:18px"><a href="/FunWorld/OnePunch/S1E1.html" style="text-decoration:none;">S1E1</a></li>
+     <li style="font-size:18px"><a href="/FunWorld/OnePunch/S1E2.html" style="text-decoration:none;">S1E2</a></li>
+    </ul>
+    </div>
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+  </header>
+    <body>
+    </body>
+</html>
